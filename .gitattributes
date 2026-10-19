@@ -1,0 +1,2 @@
+# Preserve byte-protected historical sources exactly on every platform.
+reference/frozen_v1/*.py -text

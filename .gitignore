@@ -1,0 +1,38 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+.pytest_cache/
+build/
+dist/
+*.log
+*.tmp
+
+# Local scientific evidence and generated audit outputs are not repository data.
+local_evidence/
+artifacts/
+
+# Internal development/audit history retained locally but excluded from a public tree.
+docs/development/
+scripts/build_stage2a_review_package.py
+
+# Generated examples and reproduction checks.
+examples/output/
+figures/reproduced/
+
+# Publication materials awaiting separate redistribution authorization.
+data/benchmark/
+data/source_data/
+data/representative_structures/
+data/MANIFEST.tsv
+paper/manuscript.md
+paper/manuscript.pdf
+paper/supplementary/
+figures/main/
+figures/extended_data/
+
+# Metadata or local release material that still contains unconfirmed authorship.
+CITATION.cff
+PUBLICATION_CHECKLIST.md
+examples/run_h1_example.ps1

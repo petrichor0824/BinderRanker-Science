@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "binderranker"
+version = "1.0.0"
+description = "Sequence-free geometric prioritization of protein binder backbones"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "BinderRanker contributors"},
+]
+dependencies = [
+  "numpy>=1.24,<3",
+]
+
+[project.optional-dependencies]
+audit = ["openpyxl>=3.1,<4"]
+figures = [
+  "matplotlib>=3.7,<4",
+  "pandas>=2,<4",
+  "Pillow>=10,<13",
+]
+
+[project.scripts]
+binderranker = "binderranker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+binderranker = ["py.typed"]
